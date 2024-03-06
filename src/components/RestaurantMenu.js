@@ -11,7 +11,7 @@ const RestaurantMenu = ()=>{
         getRestaurantInfo();
     },[])
 
-    async function getRestaurantInfo(){
+    async function  etRestaurantInfo(){
         const data = await fetch("https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=29.74750&lng=78.52840&restaurantId=469954&catalog_qa=undefined&submitAction=ENTER");
         const json =await data.json();
         console.log(json);
